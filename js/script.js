@@ -8,21 +8,72 @@ document.addEventListener("DOMContentLoaded", function() {
         menuBtn.classList.toggle('active');
     });
 
-    // Smooth Scroll
+    // Enhanced Smooth Scroll with offset
+    const scrollOffset = 80; // Adjust this value based on your header height
+
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return; // Skip if href="#"
+            
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                const elementPosition = targetElement.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - scrollOffset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
                 });
+
+                // Close mobile menu if open
                 navLinks.classList.remove('active');
                 menuBtn?.classList.remove('active');
             }
         });
     });
+
+    // Smooth scroll for all sections
+    let isScrolling = false;
+    let lastScrollTop = 0;
+
+    window.addEventListener('wheel', function(e) {
+        if (!isScrolling) {
+            isScrolling = true;
+
+            const direction = e.deltaY > 0 ? 1 : -1;
+            const sections = Array.from(document.querySelectorAll('section'));
+            const currentPos = window.pageYOffset;
+            
+            let targetSection = null;
+            
+            // Find the next/previous section
+            for (let i = 0; i < sections.length; i++) {
+                const section = sections[i];
+                const sectionTop = section.offsetTop - scrollOffset;
+                
+                if (direction > 0 && sectionTop > currentPos) {
+                    targetSection = section;
+                    break;
+                } else if (direction < 0 && sectionTop < currentPos) {
+                    targetSection = sections[i - 1];
+                }
+            }
+
+            if (targetSection) {
+                targetSection.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+
+            // Reset scrolling flag after animation
+            setTimeout(() => {
+                isScrolling = false;
+            }, 800);
+        }
+    }, { passive: true });
 
     // Intersection Observer for animations
     const observer = new IntersectionObserver((entries) => {

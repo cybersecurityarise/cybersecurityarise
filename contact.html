@@ -29,9 +29,16 @@
 
         <main>
             <section class="hero-section" aria-label="Contact page header">
+                <div class="hero-pattern"></div>
                 <div class="hero-content">
                     <h1 class="section-title">Get In Touch</h1>
                     <p class="section-subtitle">Have questions about cybersecurity? Our team is here to help and guide you.</p>
+                    <div class="hero-cta">
+                        <a href="#contact-form" class="cta-button">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Send Message</span>
+                        </a>
+                    </div>
                 </div>
             </section>
 
@@ -67,20 +74,25 @@
                             <h2>Send Us a Message</h2>
                             <form id="contact-form" class="contact-form" autocomplete="off" novalidate>
                                 <div class="form-group">
-                                    <input type="text" id="name" name="name" required aria-required="true">
+                                    <input type="text" id="name" name="name" placeholder="Enter your name" required aria-required="true">
                                     <label for="name">Your Name</label>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" id="email" name="email" required aria-required="true">
+                                    <input type="email" id="email" name="email" placeholder="Enter your email" required aria-required="true">
                                     <label for="email">Email Address</label>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" id="subject" name="subject" required aria-required="true">
+                                    <input type="text" id="subject" name="subject" placeholder="Enter subject" required aria-required="true">
                                     <label for="subject">Subject</label>
                                 </div>
                                 <div class="form-group">
-                                    <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+                                    <textarea id="message" name="message" rows="5" placeholder="Type your message here" required aria-required="true"></textarea>
                                     <label for="message">Your Message</label>
+                                </div>
+                                <div class="form-status">
+                                    <div id="form-loading" class="hidden">Sending message...</div>
+                                    <div id="form-success" class="hidden">Message sent successfully!</div>
+                                    <div id="form-error" class="hidden">Error sending message. Please try again.</div>
                                 </div>
                                 <button type="submit" class="submit-btn">
                                     <span>Send Message</span>
@@ -130,12 +142,5 @@
 
     <script src="assets/js/main.js"></script>
     <script src="assets/js/contact.js"></script>
-    <script>
-        // Add form validation and submission handling
-        document.getElementById('contact-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            // Add your form submission logic here
-        });
-    </script>
 </body>
 </html>

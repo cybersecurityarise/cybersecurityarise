@@ -67,7 +67,11 @@
 <body>
     <header>
         <div class="fle">
-            <div class="logo"><a href="index.html">Cyber Security Arise</a></div>
+            <div class="logo">
+                <div class="logo-container">
+                    <span class="logo-text">CyberSecurity Arise</span>
+                </div>
+            </div>
             <nav>
                 <ul>
                     <li><a href="index.html" aria-label="Home">Home</a></li>
@@ -81,130 +85,135 @@
     </header>
 
     <main>
-        <!-- Hero section -->
+        <!-- Enhanced Hero Section -->
         <section class="hero" style="background-image: url('assets/images/cybersecurityarise.jpg'); background-size: cover; background-position: center;">
-            <div class="hero-content">
+            <div class="hero-content" data-aos="fade-up">
                 <div class="hero-text">
                     <h1 class="gradient-title">Secure Your Digital Future</h1>
                     <p class="hero-subtitle">Master the art of cybersecurity with industry-leading experts</p>
                 </div>
                 <div class="hero-buttons">
-                    <a href="#contact" class="btn primary">
-                        <span>Start Learning</span>
-                        <i class="arrow-icon">→</i>
+                    <a href="blog.html" class="btn primary glow">
+                        <span class="btn-text">Start Learning</span>
+                        <i class="fas fa-rocket"></i>
                     </a>
-                    <a href="#courses" class="btn secondary">
-                        <span>View Courses</span>
+                    <a href="cybersecurity-fields.html" class="btn secondary pulse">
+                        <span class="btn-text">View Courses</span>
+                        <i class="fas fa-book-open"></i>
                     </a>
                 </div>
-                <div class="hero-metrics">
-                    <div class="metric">
-                        <strong class="counter">500+</strong>
-                        <span>Certified Students</span>
-                    </div>
-                    <div class="metric">
-                        <strong class="counter">50+</strong>
-                        <span>Expert Courses</span>
-                    </div>
-                    <div class="metric">
-                        <strong class="counter">95%</strong>
-                        <span>Success Rate</span>
-                    </div>
-                </div>
+            </div>
+            <div class="hero-decoration">
+                <div class="cyber-grid"></div>
+                <div class="glow-orb"></div>
             </div>
         </section>
 
-        <!-- Content sections with proper vertical flow -->
         <div class="content-container">
-            <!-- Cybersecurity Fields Section -->
-            <section class="cyber-fields" aria-label="Cybersecurity fields" id="fields">
+            <!-- Enhanced Fields Section -->
+            <section class="cyber-fields" aria-labelledby="fields-heading" data-aos="fade-up">
                 <div class="section-content">
-                    <h2>Cybersecurity Specializations</h2>
-                    <div class="fields-container">
-                        <div class="field-card">
+                    <h2 id="fields-heading" class="section-title">Cybersecurity Specializations</h2>
+                    <div class="fields-grid">
+                        <article class="field-card">
                             <div class="card-inner">
                                 <div class="card-front">
-                                    <h3>Practical Ethical Hacking</h3>
-                                    <div class="card-icon">🔒</div>
-                                    <div class="field-progress">
-                                        <div class="progress-bar"></div>
+                                    <div class="card-header">
+                                        <h3>Practical Ethical Hacking</h3>
+                                        <div class="icon-wrapper">
+                                            <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                    <div class="progress-container">
+                                        <div class="progress-label">Course Progress</div>
+                                        <div class="progress-wrapper">
+                                            <div class="progress" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="progress-text">75% Complete</span>
                                     </div>
                                 </div>
                                 <div class="card-back">
-                                    <p>Master the art of ethical hacking and security testing with hands-on experience.</p>
-                                    <a href="#" class="card-btn">Learn More</a>
+                                    <p>Master ethical hacking and security testing with real-world scenarios.</p>
+                                    <a href="cybersecurity-fields.html#ethical-hacking" class="btn btn-outline">Learn More</a>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="field-card">
+                        </article>
+                        <article class="field-card">
                             <div class="card-inner">
                                 <div class="card-front">
                                     <h3>Practical Web Hacking</h3>
-                                    <div class="card-icon">☁️</div>
-                                    <div class="field-progress">
-                                        <div class="progress-bar"></div>
+                                    <span class="card-icon" aria-hidden="true">☁️</span>
+                                    <div class="progress-wrapper">
+                                        <div class="progress" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
                                 <div class="card-back">
                                     <p>Secure Web infrastructure and applications using modern security practices.</p>
-                                    <a href="#" class="card-btn">Learn More</a>
+                                    <a href="cybersecurity-fields.html#web-hacking" class="btn btn-outline">Learn More</a>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="field-card">
+                        </article>
+                        <article class="field-card">
                             <div class="card-inner">
                                 <div class="card-front">
                                     <h3>Network Hacking</h3>
-                                    <div class="card-icon">🚨</div>
-                                    <div class="field-progress">
-                                        <div class="progress-bar"></div>
+                                    <span class="card-icon" aria-hidden="true">🚨</span>
+                                    <div class="progress-wrapper">
+                                        <div class="progress" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
                                 <div class="card-back">
                                     <p>Learn to detect, respond, and recover from security incidents effectively.</p>
-                                    <a href="#" class="card-btn">Learn More</a>
+                                    <a href="cybersecurity-fields.html#network-hacking" class="btn btn-outline">Learn More</a>
                                 </div>
                             </div>
-                        </div>
+                        </article>
                     </div>
                 </div>
             </section>
 
-            <!-- Why Choose Us Section -->
-            <section class="why-choose-us" id="why-us">
-                <h2 class="animate-slide-up">Why Choose Cybersecurity Arise?</h2>
-                <div class="why-choose-us-container">
-                    <div class="why-choose-us-item" data-aos="fade-up">
+            <!-- Enhanced Features Section -->
+            <section class="why-choose-us" aria-labelledby="why-us-heading" data-aos="fade-up">
+                <div class="section-header">
+                    <h2 id="why-us-heading" class="gradient-title">Why Choose Cybersecurity Arise?</h2>
+                    <p class="section-subtitle">Experience the difference with our comprehensive approach to cybersecurity education</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card" data-aos="fade-up">
+                        <i class="feature-icon fas fa-user-shield" aria-hidden="true"></i>
                         <h3>Expert Guidance</h3>
-                        <p>Learn from industry professionals with years of experience in cybersecurity. Our experts provide hands-on training and real-world insights.</p>
+                        <p>Learn from industry professionals with extensive cybersecurity experience.</p>
                     </div>
-                    <div class="why-choose-us-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                        <i class="feature-icon fas fa-certificate" aria-hidden="true"></i>
                         <h3>Certified Training</h3>
                         <p>Get industry-recognized certifications and practical experience through our comprehensive training programs.</p>
                     </div>
-                    <div class="why-choose-us-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                        <i class="feature-icon fas fa-headset" aria-hidden="true"></i>
                         <h3>24/7 Support</h3>
                         <p>Access continuous learning support and resources whenever you need them. Our team is always here to help.</p>
                     </div>
-                    <div class="why-choose-us-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                        <i class="feature-icon fas fa-laptop-code" aria-hidden="true"></i>
                         <h3>Latest Technology</h3>
                         <p>Stay updated with cutting-edge tools and cybersecurity techniques. Learn the most current industry practices.</p>
                     </div>
-                    <div class="why-choose-us-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                        <i class="feature-icon fas fa-handshake" aria-hidden="true"></i>
                         <h3>Industry Partnerships</h3>
                         <p>Benefit from our strategic partnerships with leading cybersecurity companies and access exclusive job opportunities.</p>
                     </div>
-                    <div class="why-choose-us-item" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                        <i class="feature-icon fas fa-flask" aria-hidden="true"></i>
                         <h3>Practical Labs</h3>
                         <p>Get hands-on experience in our state-of-the-art virtual labs with real-world scenarios and challenges.</p>
                     </div>
                 </div>
             </section>
               
-            <!-- Newsletter Section -->
-            <section class="newsletter" id="newsletter">
+            <!-- Enhanced Newsletter Section -->
+            <section class="newsletter" id="newsletter" data-aos="fade-up">
                 <div class="container">
                     <div class="newsletter-content">
                         <h2><span class="highlight">Stay Updated</span></h2>
@@ -235,33 +244,55 @@
         </div>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>About Us</h3>
-                <p>CybersecurityArise is dedicated to providing comprehensive cybersecurity education and resources for professionals and enthusiasts.</p>
-            </div>
-            <div class="footer-section">
-                <h3>Connect With Us</h3>
-                <div class="social-links">
-                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+    <!-- Enhanced Footer -->
+    <footer class="site-footer" data-aos="fade">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>About Us</h3>
+                    <p>Empowering individuals and organizations with cutting-edge cybersecurity knowledge and resources.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/manishkumarit/" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://www.youtube.com/@cybersecurityarise" class="social-link" target="_blank" rel="noopener" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                            <span>YouTube</span>
+                        </a>
+                        <a href="https://www.instagram.com/cybersecurityarise" class="social-link" target="_blank" rel="noopener" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="footer-section">
-                <h3>Contact Info</h3>
-                <p>Email: info@cybersecurityarise.com</p>
-                <p>Location: Cyber Valley, Digital City</p>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CyberSecurity Arise. All rights reserved.</p>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 CybersecurityArise. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- Scripts -->
+    <!-- Additional Scripts for Animations -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            offset: 100,
+            once: true
+        });
+    </script>
     <script src="js/main.js" defer></script>
     <script src="js/animations.js" defer></script>
     <script src="js/fields.js"></script>

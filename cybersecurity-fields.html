@@ -24,37 +24,44 @@
         </div>
     </header>
 
-    <section class="hero">
+    <section class="hero" style="background-image: url('assets/images/ethicalhacking.png')">
         <div class="hero-content">
-            <h1>Cybersecurity Career Paths</h1>
+            <h1>Cyber Security Career Paths</h1>
             <p>Explore specialized fields and find your perfect role in cybersecurity</p>
             <div class="search-box">
-                <input type="text" placeholder="Search cybersecurity topics..." id="topicSearch">
-                <button><i class="fas fa-search"></i></button>
+                <input type="text" placeholder="Search topics..." aria-label="Search">
+                <button class="search-btn" aria-label="Submit search">
+                    <i class="fas fa-search"></i>
+                </button>
             </div>
         </div>
+        <div class="hero-backdrop"></div>
     </section>
 
-    <div class="topic-navigator">
+    <nav class="topic-navigator" aria-label="Course topics">
         <div class="nav-wrapper">
-            <button class="nav-arrow prev"><i class="fas fa-chevron-left"></i></button>
-            <div class="topic-tabs">
-                <button class="topic-tab active" data-target="ethical-hacking">
-                    <i class="fas fa-shield-alt"></i>
-                    Ethical Hacking
+            <button class="nav-arrow prev" aria-label="Previous topics">
+                <i class="fas fa-chevron-left" aria-hidden="true"></i>
+            </button>
+            <div class="topic-tabs" role="tablist">
+                <button class="topic-tab active" data-target="ethical-hacking" role="tab" aria-selected="true">
+                    <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                    <span>Ethical Hacking</span>
                 </button>
-                <button class="topic-tab" data-target="web-security">
-                    <i class="fas fa-globe"></i>
-                    Web Security
+                <button class="topic-tab" data-target="web-security" role="tab">
+                    <i class="fas fa-globe" aria-hidden="true"></i>
+                    <span>Web Security</span>
                 </button>
-                <button class="topic-tab" data-target="network-security">
-                    <i class="fas fa-network-wired"></i>
-                    Network Security
+                <button class="topic-tab" data-target="network-security" role="tab">
+                    <i class="fas fa-network-wired" aria-hidden="true"></i>
+                    <span>Network Security</span>
                 </button>
             </div>
-            <button class="nav-arrow next"><i class="fas fa-chevron-right"></i></button>
+            <button class="nav-arrow next" aria-label="Next topics">
+                <i class="fas fa-chevron-right" aria-hidden="true"></i>
+            </button>
         </div>
-    </div>
+    </nav>
 
     <div class="container">
         <aside class="sidebar">
@@ -118,9 +125,9 @@
                 
                 <h3>Key Areas of Ethical Hacking</h3>
                 <ul>
-                    <li><a href="#practical-web-hacking">Web Application Security</a> – Identifying and fixing security flaws in websites.</li>
-                    <li><a href="#social-engineering">Human-Based Attacks</a> – Understanding and preventing phishing and manipulation tactics.</li>
-                    <li><a href="#red-blue-teams">Red Team vs. Blue Team</a> – Offensive vs. defensive cybersecurity strategies.</li>
+                    <li><a href="#practical-web-hacking">Web Application Security – Identifying and fixing security flaws in websites.</a></li>
+                    <li><a href="#social-engineering">Human-Based Attacks – Understanding and preventing phishing and manipulation tactics.</a></li>
+                    <li><a href="#red-blue-teams">Red Team vs. Blue Team – Offensive vs. defensive cybersecurity strategies.</a></li>
                 </ul>
             </article>
             
@@ -130,9 +137,9 @@
             
                 <h3>Essential Web Security Topics</h3>
                 <ul>
-                    <li><a href="hackerone-bugcrowd.html">Bug Bounty Platforms</a> – Learn how ethical hackers earn rewards for discovering security flaws.</li>
-                    <li><a href="web-app-security.html">Common Web Vulnerabilities</a> – Explore major threats like broken authentication and security misconfigurations.</li>
-                    <li><a href="responsible-disclosure.html">Responsible Disclosure</a> – How to report security vulnerabilities ethically and legally.</li>
+                    <li><a href="hackerone-bugcrowd.html">Bug Bounty Platforms – Learn how ethical hackers earn rewards for discovering security flaws.</a></li>
+                    <li><a href="web-app-security.html">Common Web Vulnerabilities – Explore major threats like broken authentication and security misconfigurations.</a></li>
+                    <li><a href="responsible-disclosure.html">Responsible Disclosure – How to report security vulnerabilities ethically and legally.</a></li>
                 </ul>
             </article>
             
@@ -142,55 +149,77 @@
             
                 <h3>Key Network Security Concepts</h3>
                 <ul>
-                    <li><a href="network-pentesting.html">Network Penetration Testing</a> – Learn how attackers exploit unsecured networks and how to defend against them.</li>
-                    <li><a href="wireless-security.html">Wireless Security</a> – Understand Wi-Fi hacking techniques and how to prevent them.</li>
-                    <li><a href="firewall-evasion.html">Bypassing Firewalls & IDS</a> – Discover how attackers evade security monitoring and how to counteract these tactics.</li>
+                    <li><a href="network-pentesting.html">Network Penetration Testing – Learn how attackers exploit unsecured networks and how to defend against them.</a></li>
+                    <li><a href="wireless-security.html">Wireless Security – Understand Wi-Fi hacking techniques and how to prevent them.</a></li>
+                    <li><a href="firewall-evasion.html">Bypassing Firewalls & IDS – Discover how attackers evade security monitoring and how to counteract these tactics.</a></li>
                 </ul>
-            </article>
-
-            <div class="related-topics">
-                <h3>Related Topics</h3>
-                <div class="topic-cards">
-                    <div class="topic-card">
-                        <i class="fas fa-bug"></i>
-                        <h4>Bug Bounty Programs</h4>
-                        <p>Learn how to earn while securing applications</p>
-                    </div>
-                    <!-- Add more topic cards -->
-                </div>
-            </div>
-            
+            </article>           
         </section>
     </div>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>About Us</h3>
-                <p>CybersecurityArise is dedicated to providing comprehensive cybersecurity education and resources for professionals and enthusiasts.</p>
-            </div>
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                    <li><a href="terms-of-service.html">Terms of Service</a></li>
-                    <li><a href="sitemap.html">Sitemap</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Connect With Us</h3>
-                <div class="social-links">
-                    <a href="https://twitter.com/cybersecurityarise" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="https://linkedin.com/company/cybersecurityarise" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/cybersecurityarise" aria-label="GitHub"><i class="fab fa-github"></i></a>
+    <!-- Add Reading Progress Indicator -->
+    <div class="reading-progress-bar" id="readingProgress"></div>
+
+    <footer class="site-footer">
+        <div class="footer-wrapper">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 class="footer-title">About Us</h3>
+                    <p class="footer-text">Empowering individuals and organizations with cutting-edge cybersecurity knowledge and resources.</p>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <nav class="footer-nav">
+                        <ul class="footer-links">
+                            <li><a href="privacy-policy.html" class="footer-link">Privacy Policy</a></li>
+                            <li><a href="terms-of-service.html" class="footer-link">Terms of Service</a></li>
+                            <li><a href="sitemap.html" class="footer-link">Sitemap</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-title">Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/manishkumarit/" class="social-link linkedin" target="_blank" rel="noopener" aria-label="Follow us on LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://www.youtube.com/@cybersecurityarise" class="social-link youtube" target="_blank" rel="noopener" aria-label="Subscribe to our YouTube channel">
+                            <i class="fab fa-youtube"></i>
+                            <span>YouTube</span>
+                        </a>
+                        <a href="https://www.instagram.com/cybersecurityarise" class="social-link instagram" target="_blank" rel="noopener" aria-label="Follow us on Instagram">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 CybersecurityArise. All rights reserved.</p>
+            <div class="footer-bottom">
+                <p class="copyright">© 2024 CyberSecurity Arise. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
     <script src="assets/js/cybersecurity-fields.js"></script>
+    <script>
+        // Add smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Reading progress indicator
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById("readingProgress").style.width = scrolled + "%";
+        });
+    </script>
 </body>
 </html>
