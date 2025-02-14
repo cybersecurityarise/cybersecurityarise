@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Fields | Cybersecurity Arise</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="assets/css/cybersecurity-fields.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="fle">
+            <div class="logo"><a href="index.html">Cyber Security Arise</a></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" aria-label="Home">Home</a></li>
+                    <li><a href="cybersecurity-fields.html" aria-label="Cybersecurity Fields">Cybersecurity Fields</a></li>
+                    <li><a href="blog.html" aria-label="Blog">Blog</a></li>
+                    <li><a href="about.html" aria-label="About Us">About Us</a></li>
+                    <li><a href="contact.html" aria-label="Contact Us">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Cybersecurity Career Paths</h1>
+            <p>Explore specialized fields and find your perfect role in cybersecurity</p>
+            <div class="search-box">
+                <input type="text" placeholder="Search cybersecurity topics..." id="topicSearch">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <div class="topic-navigator">
+        <div class="nav-wrapper">
+            <button class="nav-arrow prev"><i class="fas fa-chevron-left"></i></button>
+            <div class="topic-tabs">
+                <button class="topic-tab active" data-target="ethical-hacking">
+                    <i class="fas fa-shield-alt"></i>
+                    Ethical Hacking
+                </button>
+                <button class="topic-tab" data-target="web-security">
+                    <i class="fas fa-globe"></i>
+                    Web Security
+                </button>
+                <button class="topic-tab" data-target="network-security">
+                    <i class="fas fa-network-wired"></i>
+                    Network Security
+                </button>
+            </div>
+            <button class="nav-arrow next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Course Navigation</h2>
+            <div class="course-navigation">
+                <div class="course">
+                    <div class="course-header">
+                        <i class="fas fa-book"></i>
+                        <span>Practical Ethical Hacking</span>
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </div>
+                    <div class="chapters">
+                        <div class="chapter">
+                            <div class="chapter-header">
+                                <i class="fas fa-chevron-right"></i>
+                                <span>Chapter 1: Introduction to Ethical Hacking</span>
+                            </div>
+                            <div class="pages">
+                                <a href="#page1-1" class="page">Page 1.1: What is Ethical Hacking?</a>
+                                <a href="#page1-2" class="page">Page 1.2: Types of Hackers</a>
+                                <a href="#page1-3" class="page">Page 1.3: Legal & Ethical Aspects</a>
+                            </div>
+                        </div>
+                        <!-- Additional chapters following same structure -->
+                    </div>
+                </div>
+                
+                <div class="course">
+                    <div class="course-header">
+                        <i class="fas fa-globe"></i>
+                        <span>Web Application Security</span>
+                        <i class="fas fa-chevron-right toggle-icon"></i>
+                    </div>
+                    <!-- Similar chapter structure -->
+                </div>
+                
+                <div class="course">
+                    <div class="course-header">
+                        <i class="fas fa-network-wired"></i>
+                        <span>Network Hacking</span>
+                        <i class="fas fa-chevron-right toggle-icon"></i>
+                    </div>
+                    <!-- Similar chapter structure -->
+                </div>
+            </div>
+        </aside>
+
+        <section class="content">
+            <div class="progress-tracker">
+                <div class="progress-bar"></div>
+                <div class="section-indicators">
+                    <span class="indicator active">Ethical Hacking</span>
+                    <span class="indicator">Web Security</span>
+                    <span class="indicator">Network Security</span>
+                </div>
+            </div>
+            
+            <article id="ethical-hacking">
+                <h2>Practical Ethical Hacking: Strengthening Cybersecurity</h2>
+                <p>Ethical hacking is the practice of legally testing systems to identify security weaknesses before cybercriminals exploit them. Ethical hackers use various techniques to assess vulnerabilities, improve defenses, and protect sensitive data.</p>
+                
+                <h3>Key Areas of Ethical Hacking</h3>
+                <ul>
+                    <li><a href="#practical-web-hacking">Web Application Security</a> – Identifying and fixing security flaws in websites.</li>
+                    <li><a href="#social-engineering">Human-Based Attacks</a> – Understanding and preventing phishing and manipulation tactics.</li>
+                    <li><a href="#red-blue-teams">Red Team vs. Blue Team</a> – Offensive vs. defensive cybersecurity strategies.</li>
+                </ul>
+            </article>
+            
+            <article id="practical-web-hacking">
+                <h2>Web Application Security: Protecting Online Platforms</h2>
+                <p>Web applications are prime targets for hackers, as they store sensitive user data and handle financial transactions. Ethical hackers perform penetration testing to detect vulnerabilities like SQL injection, cross-site scripting (XSS), and authentication flaws.</p>
+            
+                <h3>Essential Web Security Topics</h3>
+                <ul>
+                    <li><a href="hackerone-bugcrowd.html">Bug Bounty Platforms</a> – Learn how ethical hackers earn rewards for discovering security flaws.</li>
+                    <li><a href="web-app-security.html">Common Web Vulnerabilities</a> – Explore major threats like broken authentication and security misconfigurations.</li>
+                    <li><a href="responsible-disclosure.html">Responsible Disclosure</a> – How to report security vulnerabilities ethically and legally.</li>
+                </ul>
+            </article>
+            
+            <article id="network-hacking">
+                <h2>Network Hacking: Securing Digital Infrastructures</h2>
+                <p>Networks form the backbone of modern IT systems, but they are also a major attack surface. Ethical hackers analyze networks to detect weaknesses in firewalls, routers, and wireless connections.</p>
+            
+                <h3>Key Network Security Concepts</h3>
+                <ul>
+                    <li><a href="network-pentesting.html">Network Penetration Testing</a> – Learn how attackers exploit unsecured networks and how to defend against them.</li>
+                    <li><a href="wireless-security.html">Wireless Security</a> – Understand Wi-Fi hacking techniques and how to prevent them.</li>
+                    <li><a href="firewall-evasion.html">Bypassing Firewalls & IDS</a> – Discover how attackers evade security monitoring and how to counteract these tactics.</li>
+                </ul>
+            </article>
+
+            <div class="related-topics">
+                <h3>Related Topics</h3>
+                <div class="topic-cards">
+                    <div class="topic-card">
+                        <i class="fas fa-bug"></i>
+                        <h4>Bug Bounty Programs</h4>
+                        <p>Learn how to earn while securing applications</p>
+                    </div>
+                    <!-- Add more topic cards -->
+                </div>
+            </div>
+            
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>CybersecurityArise is dedicated to providing comprehensive cybersecurity education and resources for professionals and enthusiasts.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="terms-of-service.html">Terms of Service</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="https://twitter.com/cybersecurityarise" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://linkedin.com/company/cybersecurityarise" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/cybersecurityarise" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 CybersecurityArise. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/cybersecurity-fields.js"></script>
+</body>
+</html>

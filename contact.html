@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Cybersecurity Arise</title>
+    <meta name="description" content="Contact CyberSecurity Arise for all your cybersecurity inquiries and support">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+</head>
+<body class="dark-theme">
+    <div class="page-wrapper">
+        <header>
+            <div class="fle">
+                <div class="logo"><a href="index.html">Cyber Security Arise</a></div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html" aria-label="Home">Home</a></li>
+                        <li><a href="cybersecurity-fields.html" aria-label="Cybersecurity Fields">Cybersecurity Fields</a></li>
+                        <li><a href="blog.html" aria-label="Blog">Blog</a></li>
+                        <li><a href="about.html" aria-label="About Us">About Us</a></li>
+                        <li><a href="contact.html" aria-label="Contact Us">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero-section" aria-label="Contact page header">
+                <div class="hero-content">
+                    <h1 class="section-title">Get In Touch</h1>
+                    <p class="section-subtitle">Have questions about cybersecurity? Our team is here to help and guide you.</p>
+                </div>
+            </section>
+
+            <section class="contact-section" aria-label="Contact information and form">
+                <div class="container">
+                    <div class="contact-grid">
+                        <div class="contact-info">
+                            <h2>Contact Information</h2>
+                            <div class="info-cards">
+                                <div class="info-card">
+                                    <div class="info-icon">📧</div>
+                                    <h3>Email Us</h3>
+                                    <a href="mailto:manishku3ar@gmail.com">manishku3ar@gmail.com</a>
+                                </div>
+                                <div class="info-card">
+                                    <div class="info-icon">📍</div>
+                                    <h3>Location</h3>
+                                    <p>Rohini, New Delhi</p>
+                                </div>
+                                <div class="info-card">
+                                    <div class="info-icon">🌐</div>
+                                    <h3>Social Media</h3>
+                                    <div class="social-links">
+                                        <a href="https://www.linkedin.com/in/manishkumarit/" target="_blank" rel="noopener">LinkedIn</a>
+                                        <a href="https://www.youtube.com/@cybersecurityarise" target="_blank" rel="noopener">YouTube</a>
+                                        <a href="https://www.instagram.com/cybersecurityarise" target="_blank" rel="noopener">Instagram</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-form-container">
+                            <h2>Send Us a Message</h2>
+                            <form id="contact-form" class="contact-form" autocomplete="off" novalidate>
+                                <div class="form-group">
+                                    <input type="text" id="name" name="name" required aria-required="true">
+                                    <label for="name">Your Name</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="email" name="email" required aria-required="true">
+                                    <label for="email">Email Address</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="subject" name="subject" required aria-required="true">
+                                    <label for="subject">Subject</label>
+                                </div>
+                                <div class="form-group">
+                                    <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+                                    <label for="message">Your Message</label>
+                                </div>
+                                <button type="submit" class="submit-btn">
+                                    <span>Send Message</span>
+                                    <i class="fas fa-arrow-right arrow-icon"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>About Us</h3>
+                    <p>Empowering individuals and organizations with cutting-edge cybersecurity knowledge and resources.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/manishkumarit/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@cybersecurityarise" target="_blank" rel="noopener" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.instagram.com/cybersecurityarise" target="_blank" rel="noopener" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CyberSecurity Arise. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/contact.js"></script>
+    <script>
+        // Add form validation and submission handling
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Add your form submission logic here
+        });
+    </script>
+</body>
+</html>

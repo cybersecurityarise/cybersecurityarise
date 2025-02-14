@@ -1,294 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Cybersecurity Blog</title>
-		<link rel="stylesheet" href="styles.css" />
-	</head>
-	<body>
-		<nav>
-			<div class="nav-left">
-				<ul>
-					<li class="nav-links"><a href="#home">Home</a></li>
-					<li class="nav-links"><a href="#courses">Courses</a></li>
-					<li class="nav-links"><a href="#videos">Videos</a></li>
-					<li class="nav-links"><a href="#blog-posts">Blog Posts</a></li>
-					<li class="nav-links"><a href="#blog-posts">Hacking Tools</a></li>
-					<li class="nav-links"><a href="#contact">Contact Us</a></li>
-				</ul>
-			</div>
-			<div class="nav-right">
-				<a
-					href="https://www.linkedin.com/company/cybersecurityarise/"
-					target="_blank"
-					class="social-link"
-				>
-					<img src="icons/linkedin.png" alt="LinkedIn" />
-				</a>
-				<a
-					href="https://www.instagram.com/cybersecurityarise/"
-					target="_blank"
-					class="social-link"
-				>
-					<img src="icons/Instagram.svg" alt="Instagram" />
-				</a>
-				<a
-					href="https://www.youtube.com/@CyberSecurityArise"
-					target="_blank"
-					class="social-link"
-				>
-					<img src="icons/youtube.png" alt="Youtube" />
-				</a>
-			</div>
-		</nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CybersecurityArise - Premier platform for cybersecurity education, ethical hacking, bug bounty, and IoT security training. Learn from industry experts.">
+    <meta name="keywords" content="cybersecurity education, ethical hacking, bug bounty, IoT security, operating system security, hardware hacking">
+    <meta name="author" content="CybersecurityArise">
+    <meta name="theme-color" content="#121212">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="CybersecurityArise - Cybersecurity Education Platform">
+    <meta property="og:description" content="Learn cybersecurity, ethical hacking, and bug bounty hunting from industry experts.">
+    <meta property="og:image" content="https://cybersecurityarise.com/assets/images/og-image.jpg">
+    <meta property="og:url" content="https://cybersecurityarise.com">
+    
+    <!-- Additional SEO meta tags -->
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="7 days">
+    <link rel="canonical" href="https://cybersecurityarise.com">
+    
+    <title>CybersecurityArise - Learn Cybersecurity & Ethical Hacking</title>
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="assets/css/style.css" as="style">
+    <link rel="preload" href="assets/fonts/poppins-v20-latin-regular.woff2" as="font" crossorigin>
+    
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/fields.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Update favicon and icon links -->
+    <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+    <link rel="manifest" href="assets/icons/site.webmanifest">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "EducationalOrganization",
+        "name": "CybersecurityArise",
+        "description": "Premier platform for cybersecurity education and training",
+        "url": "https://cybersecurityarise.com",
+        "logo": "https://cybersecurityarise.com/assets/images/logo.png",
+        "sameAs": [
+            "https://www.linkedin.com/company/cybersecurityarise",
+            "https://www.youtube.com/@cybersecurityarise"
+        ],
+        "offers": {
+            "@type": "Offer",
+            "name": "Cybersecurity Training Programs",
+            "description": "Comprehensive cybersecurity education including ethical hacking, bug bounty, and IoT security"
+        }
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="fle">
+            <div class="logo"><a href="index.html">Cyber Security Arise</a></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" aria-label="Home">Home</a></li>
+                    <li><a href="cybersecurity-fields.html" aria-label="Cybersecurity Fields">Cybersecurity Fields</a></li>
+                    <li><a href="blog.html" aria-label="Blog">Blog</a></li>
+                    <li><a href="about.html" aria-label="About Us">About Us</a></li>
+                    <li><a href="contact.html" aria-label="Contact Us">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-		<!-- Hero Section -->
-		<section id="hero">
-			<div class="hero-content">
-				<h1>Cyber Security Arise</h1>
-				<p>Empowering the Future of Cyber security</p>
-				<div class="cta-buttons">
-					<a href="#videos" class="btn">Videos</a>
-					<a href="#blog-posts" class="btn btn-outline">Read Blog</a>
-				</div>
-			</div>
-		</section>
+    <main>
+        <!-- Hero section -->
+        <section class="hero" style="background-image: url('assets/images/cybersecurityarise.jpg'); background-size: cover; background-position: center;">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="gradient-title">Secure Your Digital Future</h1>
+                    <p class="hero-subtitle">Master the art of cybersecurity with industry-leading experts</p>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn primary">
+                        <span>Start Learning</span>
+                        <i class="arrow-icon">→</i>
+                    </a>
+                    <a href="#courses" class="btn secondary">
+                        <span>View Courses</span>
+                    </a>
+                </div>
+                <div class="hero-metrics">
+                    <div class="metric">
+                        <strong class="counter">500+</strong>
+                        <span>Certified Students</span>
+                    </div>
+                    <div class="metric">
+                        <strong class="counter">50+</strong>
+                        <span>Expert Courses</span>
+                    </div>
+                    <div class="metric">
+                        <strong class="counter">95%</strong>
+                        <span>Success Rate</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-		<!-- <section id="home" class="section-with-overlay">
-			<div class="container">
-				<h2>Welcome to Cyber Security Arise</h2>
-				<p class="lead">
-					Empowering the next generation of cybersecurity professionals through
-					expert-led training and practical experience.
-				</p>
-				<div class="stats">
-					<div class="stat">
-						<span class="number">Penetration Testing</span>
-					</div>
-					<div class="stat">
-						<span class="number">Cyber Security</span>
-					</div>
-					<div class="stat">
-						<span class="number">Ethical Hacking</span>
-					</div>
-				</div>
-			</div>
-		</section> -->
+        <!-- Content sections with proper vertical flow -->
+        <div class="content-container">
+            <!-- Cybersecurity Fields Section -->
+            <section class="cyber-fields" aria-label="Cybersecurity fields" id="fields">
+                <div class="section-content">
+                    <h2>Cybersecurity Specializations</h2>
+                    <div class="fields-container">
+                        <div class="field-card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <h3>Practical Ethical Hacking</h3>
+                                    <div class="card-icon">🔒</div>
+                                    <div class="field-progress">
+                                        <div class="progress-bar"></div>
+                                    </div>
+                                </div>
+                                <div class="card-back">
+                                    <p>Master the art of ethical hacking and security testing with hands-on experience.</p>
+                                    <a href="#" class="card-btn">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
 
-		<!-- <section id="featured">
-			<h2>Featured Topics</h2>
-			<div class="grid">
-				<div class="card">
-					<h3>Threat Intelligence</h3>
-					<p>Stay ahead of cyber threats with advanced intelligence techniques.</p>
-				</div>
-				<div class="card">
-					<h3>Secure Coding</h3>
-					<p>Learn to write secure, robust, and reliable code.</p>
-				</div>
-				<div class="card">
-					<h3>Network Security</h3>
-					<p>Master advanced network protection strategies.</p>
-				</div>
-			</div>
-		</section> -->
+                        <div class="field-card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <h3>Practical Web Hacking</h3>
+                                    <div class="card-icon">☁️</div>
+                                    <div class="field-progress">
+                                        <div class="progress-bar"></div>
+                                    </div>
+                                </div>
+                                <div class="card-back">
+                                    <p>Secure Web infrastructure and applications using modern security practices.</p>
+                                    <a href="#" class="card-btn">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
 
-		<section id="courses">
-			<h2>Our Courses</h2>
-			<div class="courses-grid">
-				<a href="#networking" class="course-link">
-					<div class="course-card">
-						<div class="course-icon">🌐</div>
-						<h3 class="course-title">Operating Systems Basics</h3>
-						<p>
-							Covering the basics of both Windows and Linux, focusing on system
-							navigation, file management, and essential command-line usage.
-						</p>
-					</div>
-				</a>
-				<a href="#os" class="course-link">
-					<div class="course-card">
-						<div class="course-icon">💻</div>
-						<h3 class="course-title">Ethical Hacking</h3>
-						<p>
-							Learn ethical hacking to test and secure systems by identifying
-							and exploiting vulnerabilities.
-						</p>
-					</div>
-				</a>
-				<a href="#cs" class="course-link">
-					<div class="course-card">
-						<div class="course-icon">🔍</div>
-						<h3 class="course-title">Network Security</h3>
-						<p>Learn foundational network protection techniques and tools.</p>
-					</div>
-				</a>
-				<a href="#networking" class="course-link">
-					<div class="course-card">
-						<div class="course-icon">🌐</div>
-						<h3 class="course-title">Web Application Security</h3>
-						<p>
-							Learn the fundamentals of securing web applications, covering
-							common vulnerabilities and protection techniques for both
-							front-end and back-end.
-						</p>
-					</div>
-				</a>
-			</div>
-		</section>
+                        <div class="field-card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <h3>Network Hacking</h3>
+                                    <div class="card-icon">🚨</div>
+                                    <div class="field-progress">
+                                        <div class="progress-bar"></div>
+                                    </div>
+                                </div>
+                                <div class="card-back">
+                                    <p>Learn to detect, respond, and recover from security incidents effectively.</p>
+                                    <a href="#" class="card-btn">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-		<section id="blog-posts" class="blog-grid">
-			<h2>Latest Blog Posts</h2>
-			<div class="posts-container">
-				<article class="blog-card">
-					<div class="blog-image">
-						<img
-							src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80"
-							alt="Cybersecurity visualization"
-						/>
-					</div>
-					<div class="blog-content">
-						<h3>Understanding Zero Trust Security</h3>
-						<p class="blog-meta">Posted on July 1, 2023 | Security Strategy</p>
-						<p class="blog-excerpt">
-							Discover how Zero Trust architecture is revolutionizing enterprise
-							security and why it's becoming the new standard for cyber
-							defense...
-						</p>
-						<a href="#read-more" class="read-more-btn">Read Article →</a>
-					</div>
-				</article>
-				<article class="blog-card">
-					<div class="blog-image">
-						<img
-							src="https://images.unsplash.com/photo-1563206767-5b18f218e8de?auto=format&fit=crop&w=800&q=80"
-							alt="Network security concept"
-						/>
-					</div>
-					<div class="blog-content">
-						<h3>Top 5 Emerging Cyber Threats in 2023</h3>
-						<p class="blog-meta">Posted on June 28, 2023 | Threat Analysis</p>
-						<p class="blog-excerpt">
-							Stay ahead of cybercriminals with our comprehensive analysis of
-							the most significant emerging threats in the cybersecurity
-							landscape...
-						</p>
-						<a href="#read-more" class="read-more-btn">Read Article →</a>
-					</div>
-				</article>
-			</div>
-		</section>
-		<section id="videos" class="video-section">
-			<h2>Featured Videos</h2>
-			<div class="video-grid">
-				<article class="video-card">
-					<div class="video-container">
-						<iframe
-							width="320"
-							height="215"
-							src="https://www.youtube.com/embed/u0_j6g0JL4k"
-							frameborder="0"
-							allowfullscreen
-						></iframe>
-					</div>
-					<h3>Introduction to Cybersecurity</h3>
-					<p class="video-description">
-						Learn the fundamentals of cybersecurity and understand basic
-						security concepts.
-					</p>
-				</article>
+            <!-- Why Choose Us Section -->
+            <section class="why-choose-us" id="why-us">
+                <h2 class="animate-slide-up">Why Choose Cybersecurity Arise?</h2>
+                <div class="why-choose-us-container">
+                    <div class="why-choose-us-item" data-aos="fade-up">
+                        <h3>Expert Guidance</h3>
+                        <p>Learn from industry professionals with years of experience in cybersecurity. Our experts provide hands-on training and real-world insights.</p>
+                    </div>
+                    <div class="why-choose-us-item" data-aos="fade-up" data-aos-delay="100">
+                        <h3>Certified Training</h3>
+                        <p>Get industry-recognized certifications and practical experience through our comprehensive training programs.</p>
+                    </div>
+                    <div class="why-choose-us-item" data-aos="fade-up" data-aos-delay="200">
+                        <h3>24/7 Support</h3>
+                        <p>Access continuous learning support and resources whenever you need them. Our team is always here to help.</p>
+                    </div>
+                    <div class="why-choose-us-item" data-aos="fade-up" data-aos-delay="300">
+                        <h3>Latest Technology</h3>
+                        <p>Stay updated with cutting-edge tools and cybersecurity techniques. Learn the most current industry practices.</p>
+                    </div>
+                    <div class="why-choose-us-item" data-aos="fade-up" data-aos-delay="400">
+                        <h3>Industry Partnerships</h3>
+                        <p>Benefit from our strategic partnerships with leading cybersecurity companies and access exclusive job opportunities.</p>
+                    </div>
+                    <div class="why-choose-us-item" data-aos="fade-up" data-aos-delay="500">
+                        <h3>Practical Labs</h3>
+                        <p>Get hands-on experience in our state-of-the-art virtual labs with real-world scenarios and challenges.</p>
+                    </div>
+                </div>
+            </section>
+              
+            <!-- Newsletter Section -->
+            <section class="newsletter" id="newsletter">
+                <div class="container">
+                    <div class="newsletter-content">
+                        <h2><span class="highlight">Stay Updated</span></h2>
+                        <p>Subscribe to receive the latest cybersecurity updates, tips, and exclusive content directly in your inbox.</p>
+                        <form id="newsletter-form" autocomplete="off">
+                            <div class="form-group">
+                                <input 
+                                    type="email" 
+                                    id="email-input"
+                                    name="email"
+                                    placeholder="Enter your email address" 
+                                    required 
+                                    aria-label="Email address"
+                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                                >
+                                <button type="submit" class="subscribe-btn">
+                                    <span>Subscribe</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </form>
+                        <div class="newsletter-info">
+                            <p class="privacy-note">🔒 Your information is safe with us. No spam, ever.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
 
-				<article class="video-card">
-					<div class="video-container">
-						<iframe
-							width="320"
-							height="215"
-							src="https://www.youtube.com/embed/8zgR5HKr_8U"
-							frameborder="0"
-							allowfullscreen
-						></iframe>
-					</div>
-					<h3>Ethical Hacking Basics</h3>
-					<p class="video-description">
-						Learn ethical hacking techniques and penetration testing basics.
-					</p>
-				</article>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>CybersecurityArise is dedicated to providing comprehensive cybersecurity education and resources for professionals and enthusiasts.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>Email: info@cybersecurityarise.com</p>
+                <p>Location: Cyber Valley, Digital City</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 CybersecurityArise. All rights reserved.</p>
+        </div>
+    </footer>
 
-				<article class="video-card">
-					<div class="video-container">
-						<iframe
-							width="320"
-							height="215"
-							src="https://www.youtube.com/embed/8zgR5HKr_8U"
-							frameborder="0"
-							allowfullscreen
-						></iframe>
-					</div>
-					<h3>Cloud Security Fundamentals</h3>
-					<p class="video-description">
-						Explore essential cloud security concepts and protection strategies.
-					</p>
-				</article>
-			</div>
-		</section>
+    <!-- Scripts -->
+    <script src="js/main.js" defer></script>
+    <script src="js/animations.js" defer></script>
+    <script src="js/fields.js"></script>
 
-		<!-- Contact Form -->
-		<section id="contact">
-			<h2>Contact Us</h2>
-			<form id="contact-form">
-				<input type="text" name="name" placeholder="Your Name" required />
-				<input type="email" name="email" placeholder="Your Email" required />
-				<input
-					type="tel"
-					name="phone"
-					placeholder="Your Phone Number (optional)"
-				/>
-				<select name="inquiry" required>
-					<option value="" disabled selected>Select Inquiry Type</option>
-					<option value="support">Support</option>
-					<option value="training">Training Sales</option>
-					<option value="other">Other</option>
-				</select>
-				<textarea name="message" placeholder="Your Message" required></textarea>
-				<button type="submit" class="btn">Send Message</button>
-			</form>
-		</section>
-
-		<footer>
-			<p>&copy; 2024 Cybersecurityarise. All rights reserved.</p>
-		</footer>
-		<script
-			type="text/javascript"
-			src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
-		></script>
-
-		<script type="text/javascript">
-			(function () {
-				emailjs.init({
-					publicKey: "9Gpf6v_V-hCLQ7DkW",
-				});
-			})();
-		</script>
-		<script type="text/javascript">
-			window.onload = function () {
-				document
-					.getElementById("contact-form")
-					.addEventListener("submit", function (event) {
-						event.preventDefault();
-						// these IDs from the previous steps
-						emailjs.sendForm("service_c4pge0s", "template_xquf4xp", this).then(
-							() => {
-								alert("Message sent successfully!");
-								console.log("SUCCESS!");
-							},
-							(error) => {
-								alert("Message failed to send.");
-								console.log("FAILED...", error);
-							}
-						);
-					});
-			};
-		</script>
-	</body>
+</body>
 </html>
