@@ -1,0 +1,221 @@
+.about-us {
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.about-card {
+    margin: 1rem 0;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.about-hero {
+    min-height: 70vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    background-image: url('../images/cybersecurityarise.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.3);
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        45deg,
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 255, 140, 0.1)
+    );
+    z-index: 1;
+}
+
+.about-hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 800px;
+    padding: 2rem;
+}
+
+.lead-text {
+    font-size: clamp(1.2rem, 3vw, 1.5rem);
+    color: rgba(255, 255, 255, 0.9);
+    margin-top: 1rem;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 4rem var(--spacing-base);
+    max-width: var(--content-max-width);
+    margin: 0 auto;
+}
+
+.feature-item {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 255, 140, 0.1);
+    transition: transform 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    filter: drop-shadow(0 0 15px rgba(0, 255, 140, 0.3));
+}
+
+.feature-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.feature-item p {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+}
+
+.features-section {
+    padding: 6rem 0;
+    background: linear-gradient(135deg, var(--background-dark) 0%, var(--background-light) 100%);
+    position: relative;
+}
+
+.features-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: 
+        linear-gradient(45deg, rgba(0, 255, 140, 0.1) 0%, transparent 100%),
+        repeating-linear-gradient(
+            45deg,
+            transparent,
+            transparent 10px,
+            rgba(0, 255, 140, 0.05) 10px,
+            rgba(0, 255, 140, 0.05) 20px
+        );
+    opacity: 0.5;
+}
+
+.feature-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(0, 255, 140, 0.1);
+    border-radius: 15px;
+    padding: 2.5rem;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 255, 140, 0.2);
+}
+
+.feature-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.feature-card p {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.vision-section {
+    background: linear-gradient(45deg, var(--background-dark), var(--accent-color));
+    padding: 8rem 0;
+    margin-top: 4rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.vision-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.vision-content h2 {
+    color: var(--primary-color);
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 2rem;
+}
+
+.vision-content p {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 3rem;
+}
+
+.vision-text {
+    font-size: clamp(1.1rem, 2vw, 1.3rem);
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.highlight {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1.2rem 3rem;
+    background: linear-gradient(45deg, var(--primary-color), #00bfff);
+    border: none;
+    color: var(--background-dark);
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 255, 140, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+        padding: 2rem var(--spacing-base);
+    }
+
+    .features-section {
+        padding: 4rem 0;
+    }
+    
+    .vision-section {
+        padding: 4rem 0;
+    }
+    
+    .vision-content p {
+        font-size: 1.1rem;
+    }
+}
